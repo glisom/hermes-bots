@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  echo "usage: $0 <bot-name> [profile-name] [--force]" >&2
+  exit 2
+}
+
+BOT_NAME="${1:-}"
+[[ -n "$BOT_NAME" ]] || usage
+PROFILE_NAME="${2:-$BOT_NAME}"
+MODE="${3:-}"
+[[ -z "$MODE" || "$MODE" == "--force" ]] || usage
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+BOT_DIR="$ROOT/bots/$BOT_NAME"
+[[ -f "$BOT_DIR/distribution.yaml" ]] || {
+  echo "unknown bot: $BOT_NAME" >&2
+  exit 1
+}
+
+HERMES_BIN="${HERMES_BIN:-$(command -v hermes)}"
+args=(profile install "$BOT_DIR" --name "$PROFILE_NAME" --alias --yes)
+[[ "$MODE" == "--force" ]] && args+=(--force)
+"$HERMES_BIN" "${args[@]}"
+
+platform_installer="$BOT_DIR/scripts/install-macos.sh"
+if [[ -x "$platform_installer" && "$(uname -s)" == "Darwin" ]]; then
+  "$platform_installer" --profile "$PROFILE_NAME"
+fi
+
+"$HERMES_BIN" profile info "$PROFILE_NAME"

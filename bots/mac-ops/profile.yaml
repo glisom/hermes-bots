@@ -1,0 +1,9 @@
+description: Reliability bot for this Mac. Monitors host health and user services, investigates incidents, performs safe reversible remediation, and verifies recovery.
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: Mac Ops
+    shape: cloud
+    color: "hsl(38 92% 55%)"
+    imageKind: shape
+    custom: true

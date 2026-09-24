@@ -1,0 +1,35 @@
+model:
+  default: gpt-4.1
+  provider: copilot
+  base_url: https://api.githubcopilot.com
+plugins:
+  enabled: []
+agent:
+  disabled_toolsets:
+    - web
+    - browser
+    - vision
+    - video
+    - image_gen
+    - video_gen
+    - x_search
+    - tts
+    - stt
+    - skills
+    - todo
+    - kanban
+    - memory
+    - session_search
+    - connections
+    - clarify
+    - delegation
+    - cronjob
+    - homeassistant
+    - spotify
+    - yuanbao
+    - computer_use
+    - a2a
+approvals:
+  mode: smart
+  cron_mode: smart
+  single_query_mode: approve

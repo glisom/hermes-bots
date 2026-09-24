@@ -1,0 +1,20 @@
+{
+  "disk_warning_free_gb": 50,
+  "disk_critical_free_gb": 20,
+  "disk_warning_free_percent": 8,
+  "disk_critical_free_percent": 4,
+  "memory_warning_free_percent": 10,
+  "memory_critical_free_percent": 5,
+  "load_warning_per_core": 2.0,
+  "load_critical_per_core": 3.0,
+  "oversized_log_mb": 500,
+  "repeat_alert_seconds": 3600,
+  "remediation_cooldown_seconds": 1800,
+  "watched_launch_agents": [
+    {
+      "label": "ai.hermes.gateway",
+      "critical": true,
+      "auto_restart": true
+    }
+  ]
+}

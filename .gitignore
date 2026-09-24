@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Hermes credentials and user data
+**/.env
+**/.env.*
+!**/.env.template
+**/auth.json
+**/memories/
+**/sessions/
+**/logs/
+**/state/
+**/state.db*
+**/projects.db
+**/cache/
+**/backups/
+**/workspace/
+**/plans/
+**/home/
+**/local/
+**/*_cache/
+**/*.lock
+**/gateway.pid
+**/gateway_state.json
+**/processes.json
+
+# Python and test artifacts
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+
+# Generated platform files
+**/*.generated.plist

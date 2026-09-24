@@ -1,0 +1,11 @@
+name: mac-ops
+version: 0.1.0
+description: Reliability bot for a Mac. Monitors host health and user services, investigates incidents, performs safe reversible remediation, and verifies recovery.
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml
+  - scripts
