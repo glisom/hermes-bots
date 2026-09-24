@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  echo "usage: $0 <team-name> [--force]" >&2
+  exit 2
+}
+
+TEAM="${1:-}"
+MODE="${2:-}"
+[[ -n "$TEAM" ]] || usage
+[[ -z "$MODE" || "$MODE" == "--force" ]] || usage
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PROFILE_LIST="$ROOT/teams/$TEAM/profiles.txt"
+[[ -f "$PROFILE_LIST" ]] || {
+  echo "unknown team: $TEAM" >&2
+  exit 1
+}
+
+while IFS= read -r bot; do
+  [[ -n "$bot" ]] || continue
+  if [[ "$MODE" == "--force" ]]; then
+    "$ROOT/bin/install-bot" "$bot" "$bot" --force
+  else
+    "$ROOT/bin/install-bot" "$bot"
+  fi
+done < "$PROFILE_LIST"
+
+echo "Installed team: $TEAM"

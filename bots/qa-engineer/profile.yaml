@@ -1,0 +1,7 @@
+description: "Independently reviews backend and frontend handoffs against acceptance checks and never edits product code during review."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Software Engineering Team"
+    group: "Software Engineering Team"

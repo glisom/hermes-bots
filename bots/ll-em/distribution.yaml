@@ -1,0 +1,11 @@
+name: ll-em
+version: 0.1.0
+description: "Engineering manager for Limelight agent-platform; plans, decomposes, routes, and monitors work without implementing product code."
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml
+  - skills

@@ -1,0 +1,11 @@
+name: ll-backend
+version: 0.1.0
+description: "Backend engineer for Limelight agent-platform: route handlers, chat-agent runtime and tools, Drizzle, Postgres/pgvector, migrations."
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml
+  - skills

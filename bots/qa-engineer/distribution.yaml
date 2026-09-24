@@ -1,0 +1,10 @@
+name: qa-engineer
+version: 0.1.0
+description: "Independently reviews backend and frontend handoffs against acceptance checks and never edits product code during review."
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml

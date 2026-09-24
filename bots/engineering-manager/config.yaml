@@ -1,0 +1,29 @@
+plugins:
+  enabled: []
+platform_toolsets:
+  cli:
+    - clarify
+    - file
+    - kanban
+    - terminal
+    - web
+kanban:
+  dispatch_in_gateway: true
+  notify_in_gateway: true
+  review_dispatch: true
+  auto_decompose: false
+  orchestrator_profile: engineering-manager
+  default_assignee: backend-engineer
+  max_in_progress_per_profile: 1
+  dispatch_profiles:
+    - engineering-manager
+    - backend-engineer
+    - frontend-engineer
+    - qa-engineer
+approvals:
+  mode: smart
+  single_query_mode: deny
+  deny:
+    - "git push *--force*"
+    - "git push -f*"
+    - "gh pr merge*"

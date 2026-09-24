@@ -1,0 +1,7 @@
+description: "QA engineer and product advocate for Limelight agent-platform; independently reviews frontend and backend handoffs."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Limelight Engineering Team"
+    group: "Limelight Engineering Team"

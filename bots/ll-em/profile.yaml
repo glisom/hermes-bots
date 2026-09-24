@@ -1,0 +1,7 @@
+description: "Engineering manager for Limelight agent-platform; plans, decomposes, routes, and monitors work without implementing product code."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Limelight Engineering Team"
+    group: "Limelight Engineering Team"

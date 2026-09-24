@@ -1,0 +1,10 @@
+name: ll-frontend
+version: 0.1.0
+description: "Frontend engineer for Limelight agent-platform: Next.js App Router, React, packages/ui, chat UI, and generative UI entities."
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml

@@ -1,0 +1,11 @@
+name: ll-qa
+version: 0.1.0
+description: "QA engineer and product advocate for Limelight agent-platform; independently reviews frontend and backend handoffs."
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml
+  - skills

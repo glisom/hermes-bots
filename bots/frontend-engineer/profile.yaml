@@ -1,0 +1,7 @@
+description: "Implements user-facing application code, accessibility, responsive behavior, design-system usage, and frontend tests."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Software Engineering Team"
+    group: "Software Engineering Team"

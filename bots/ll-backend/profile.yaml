@@ -1,0 +1,7 @@
+description: "Backend engineer for Limelight agent-platform: route handlers, chat-agent runtime and tools, Drizzle, Postgres/pgvector, migrations."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Limelight Engineering Team"
+    group: "Limelight Engineering Team"

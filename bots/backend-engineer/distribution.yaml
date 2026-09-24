@@ -1,0 +1,10 @@
+name: backend-engineer
+version: 0.1.0
+description: "Implements server-side APIs, domain logic, persistence, integrations, migrations, and backend tests."
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml

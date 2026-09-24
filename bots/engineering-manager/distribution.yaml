@@ -1,0 +1,10 @@
+name: engineering-manager
+version: 0.1.0
+description: "Plans and decomposes repository work, routes it to specialist profiles, tracks QA outcomes, and never implements product code."
+hermes_requires: ">=0.21.3"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml
