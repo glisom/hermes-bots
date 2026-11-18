@@ -1,0 +1,10 @@
+name: tolair-frontend
+version: 0.1.0
+description: "Tolair frontend engineer for Next.js, Tailwind, cockpit UX, accessibility, and pack-driven vocabulary."
+hermes_requires: ">=0.19.0"
+author: Grant Isom
+license: UNLICENSED
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - profile.yaml

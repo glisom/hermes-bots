@@ -21,6 +21,10 @@ This repository stores bot definitions, not live Hermes state. Each machine keep
 | [`ll-frontend`](bots/ll-frontend/) | Implement Next.js, React, packages/ui, chat, and entity work |
 | [`ll-qa`](bots/ll-qa/) | Independently verify acceptance checks and review every handoff |
 
+### Tolair engineering team
+
+[Tinker and the Tolair engineering team](teams/tolair-engineering/) provide `tolair-em`, `tolair-backend`, `tolair-frontend`, and `tolair-qa` profiles tailored to Tolair’s platform boundaries and repository workflow. Install with `./bin/install-team tolair-engineering`. See the team README for runtime compatibility and existing Slack gateway setup.
+
 ### Generic engineering team
 
 | Bot | Purpose |
