@@ -1,0 +1,7 @@
+description: "Tolair backend engineer for NestJS, Prisma, ingestion, governed metrics, lineage, and tenant isolation."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Tolair Engineering Team"
+    group: "Tolair Engineering Team"

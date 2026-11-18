@@ -1,0 +1,20 @@
+plugins:
+  enabled: []
+platform_toolsets:
+  cli:
+    - browser
+    - code_execution
+    - file
+    - terminal
+    - vision
+    - web
+kanban:
+  dispatch_in_gateway: false
+  notify_in_gateway: false
+approvals:
+  mode: smart
+  single_query_mode: deny
+  deny:
+    - "git push *--force*"
+    - "git push -f*"
+    - "gh pr merge*"

@@ -1,0 +1,7 @@
+description: "Tinker: coordinates Tolair engineering plans, backend/frontend handoffs, and independent QA."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Tolair Engineering Team"
+    group: "Tolair Engineering Team"

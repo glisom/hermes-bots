@@ -1,0 +1,7 @@
+description: "Independent Tolair QA for acceptance evidence, tenant isolation, lineage, and UI behavior."
+description_auto: false
+ui_meta:
+  hermes-bots:
+    groups:
+      - "Tolair Engineering Team"
+    group: "Tolair Engineering Team"
